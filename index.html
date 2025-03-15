@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="noindex, nofollow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio Nick</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+
+            body {
+                background-color: #fefefe;
+                padding: 40px;
+                color: #333;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            h1 {
+                text-align: center;
+                margin-bottom: 10px;
+                color: #276abf;
+                font-size: 40px;
+                font-weight: bold;
+            }
+
+            h1.subtitle {
+                color: #a4a4a4;
+                font-size: 30px;
+                font-weight: normal;
+                margin-bottom: 40px;
+            }
+
+            .portfolio {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                justify-content: center;
+            }
+
+            .card {
+                background-color: white;
+                border-radius: 15px;
+                overflow: hidden;
+                width: 350px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                transition:
+                    transform 0.3s ease,
+                    box-shadow 0.3s ease;
+                text-decoration: none;
+                color: inherit;
+            }
+
+            .card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            }
+
+            .card-image {
+                height: 200px;
+                background-color: #3498db;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .card-image i {
+                font-size: 80px;
+                color: white;
+            }
+
+            .card-content {
+                padding: 25px;
+            }
+
+            .card-title {
+                font-size: 22px;
+                margin-bottom: 15px;
+                color: #2c3e50;
+            }
+
+            .card-description {
+                font-size: 16px;
+                line-height: 1.5;
+                color: #7f8c8d;
+                margin-bottom: 20px;
+            }
+
+            .card-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            .tag {
+                background-color: #ecf0f1;
+                padding: 5px 10px;
+                border-radius: 50px;
+                font-size: 14px;
+                color: #7f8c8d;
+            }
+
+            .card-link {
+                margin-top: 20px;
+                display: inline-block;
+                color: #3498db;
+                font-weight: 600;
+            }
+
+            /* Different colors for each card and adding background images */
+            .card:nth-child(1) .card-image {
+                background-color: #276abf;
+                background-image: url("../assets/powerbi-s.png");
+                background-size: cover;
+                background-position: center;
+            }
+
+            .card:nth-child(2) .card-image {
+                background-color: #276abf;
+                background-image: url("../assets/swim-s.png");
+                background-size: cover;
+                background-position: center;
+            }
+
+            .card:nth-child(3) .card-image {
+                background-color: #276abf;
+                background-image: url("../assets/cv-s.png");
+                background-size: cover;
+                background-position: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">Portfolio</h1>
+            <h1 class="subtitle">Nick van der Zandt</h1>
+
+            <div class="portfolio">
+                <!-- Card 1 -->
+                <a href="project1.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Dynamisch Power BI Dashboard</h2>
+                        <p class="card-description">
+                            Een interactief Power BI-dashboard voor HR- en
+                            L&D-data met Row Level Security dat complexe
+                            datasets omzet in aantrekkelijke visuals die inzicht
+                            geven in waardevolle bedrijfsinformatie en KPI's.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">Power BI</span>
+                            <span class="tag">DAX</span>
+                            <span class="tag">RLS</span>
+                            <span class="tag">Dashboarding</span>
+                            <span class="tag">Relationeel datamodel</span>
+                            <span class="tag">Engineering</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 2 -->
+                <a
+                    href="https://nzprj.github.io/portfolio/product_24_uurs_marathon_2024.html"
+                    class="card"
+                >
+                    <div class="card-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Data rapport zwemmarathon</h2>
+                        <p class="card-description">
+                            Data analyse van 24-uurs zwemmarathon als opdracht
+                            voor de post-hbo opleiding Big Data Scientist, met
+                            data-opslag, transformatie, curatie en visualisatie.
+                            Beoordeeld met maximale score.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">R</span>
+                            <span class="tag">RMarkdown</span>
+                            <span class="tag">ggplot2</span>
+                            <span class="tag">HTML / SCSS</span>
+                            <span class="tag">Data Analyse</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="project3.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">
+                            Data-gedreven<br />Curriculum Vitae
+                        </h2>
+                        <p class="card-description">
+                            Mijn CV als webpagina, met gegevens uit Google
+                            Sheets voor een gestructureerde presentatie van
+                            vaardigheden, opleiding en ervaring.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">R</span>
+                            <span class="tag">HTML / CSS</span>
+                            <span class="tag">Design</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
